@@ -16,10 +16,10 @@ class HTMLPurifier_Filter_ExternalScripts extends HTMLPurifier_Filter
     public $name = 'ExternalScripts';
 
     /**
-     * FunÁ„o que corre antes do filtro do htmlpurifier e faz match de todas as tags script dentro do cÛdigo
-     * html e as converte para [SCRIPT...]...[/SCRIPT] de forma a n„o serem eliminadas.
-     * Para cada uma das tags tambÈm faz verificaÁ„o de se o src do script È seguro (verifica se o src est· dentro de $urls).
-     * Se o src for seguro, converte para a forma [SCRIPT...]...[/SCRIPT], sen„o elimina essa tag.
+     * Fun√ß√£o que corre antes do filtro do htmlpurifier e faz match de todas as tags script dentro do c√≥digo
+     * html e as converte para [SCRIPT...]...[/SCRIPT] de forma a n√£o serem eliminadas.
+     * Para cada uma das tags tamb√©m faz verifica√ß√£o de se o src do script √© seguro (verifica se o src est√° dentro de $urls).
+     * Se o src for seguro, converte para a forma [SCRIPT...]...[/SCRIPT], sen√£o elimina essa tag.
      * @param string $html
      * @param HTMLPurifier_Config $config
      * @param HTMLPurifier_Context $context
@@ -33,9 +33,9 @@ class HTMLPurifier_Filter_ExternalScripts extends HTMLPurifier_Filter
     }
 
     /**
-     * FunÁ„o que corre depois do filtro do htmlpurifier e faz match de todas as tags [SCRIPT...]...[/SCRIPT] dentro do cÛdigo
+     * Fun√ß√£o que corre depois do filtro do htmlpurifier e faz match de todas as tags [SCRIPT...]...[/SCRIPT] dentro do c√≥digo
      * html e as converte para a tag script de html.
-     * N„o È feito nenhum tipo de filtragem ao src pois isso j· È feito no preFilter.
+     * N√£o √© feito nenhum tipo de filtragem ao src pois isso j√° √© feito no preFilter.
      * @param string $html
      * @param HTMLPurifier_Config $config
      * @param HTMLPurifier_Context $context
